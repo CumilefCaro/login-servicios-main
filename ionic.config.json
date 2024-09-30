@@ -1,0 +1,7 @@
+{
+  "name": "login-servicios",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular-standalone"
+}
