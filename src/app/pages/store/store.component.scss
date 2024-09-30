@@ -1,0 +1,27 @@
+.qr-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.qr-image {
+  width: 200px;
+  height: 200px;
+  margin-top: 10px;
+  border: 2px solid #ccc;
+  border-radius: 10px;
+}
+
+.nota-item {
+  margin-top: 10px;
+}
+
+.ion-text-center {
+  text-align: center;
+}
+
+.ion-padding {
+  padding: 15px;
+}

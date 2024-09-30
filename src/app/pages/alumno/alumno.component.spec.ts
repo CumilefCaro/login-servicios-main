@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { LogoutComponent } from './logout.component';
+import { AlumnoComponent } from './alumno.component';
 
-describe('LogoutComponent', () => {
-  let component: LogoutComponent;
-  let fixture: ComponentFixture<LogoutComponent>;
+describe('AlumnoComponent', () => {
+  let component: AlumnoComponent;
+  let fixture: ComponentFixture<AlumnoComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LogoutComponent ],
+      declarations: [ AlumnoComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LogoutComponent);
+    fixture = TestBed.createComponent(AlumnoComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

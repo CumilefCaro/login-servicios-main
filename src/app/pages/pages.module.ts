@@ -1,16 +1,20 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
+
 import { PagesRoutingModule } from './pages-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ContactoComponent } from './contacto/contacto.component';
 import { StoreComponent } from './store/store.component';
 import { LoginComponent } from './login/login.component';
-import { LogoutComponent } from './logout/logout.component';
-import { NotFoundComponent } from './not-found/not-found.component';
+
+
 import { FormsModule } from '@angular/forms';
 import { IonicModule } from '@ionic/angular';
 import { SharedModule } from '../shared/shared.module';
+import { AlumnoComponent } from './alumno/alumno.component';
+import { DocenteComponent } from './docente/docente.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 
 @NgModule({
@@ -19,8 +23,10 @@ import { SharedModule } from '../shared/shared.module';
     ContactoComponent,
     StoreComponent,
     LoginComponent,
-    LogoutComponent,
-    NotFoundComponent,
+    DocenteComponent,
+    AlumnoComponent,
+    NotFoundComponent
+
   ],
   imports: [
     CommonModule,

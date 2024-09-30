@@ -1,7 +1,48 @@
 <ion-content>
   <app-header></app-header>
-  <p>
-    store works! {{nombre}}
-  </p>
+
+  <!-- Contenedor del QR -->
+  <div class="qr-container ion-padding">
+    <h3 class="ion-text-center">Escanea asistencia</h3>
+    <img src="assets/img/download.png" alt="QR para asistencia" class="qr-image">
+  </div>
+
+  <!-- Botón para regresar a asignaturas -->
+  <ion-button expand="block" color="light" class="ion-margin-top" [routerLink]="['/not-found']">
+    Regresar a asignaturas
+  </ion-button>
+
+  <!-- Sección para agregar notas -->
+  <h3 class="ion-text-center ion-margin-top">Agregar Notas</h3>
+  <div class="notas-container ion-padding">
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 1</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 8.5"></ion-input>
+    </ion-item>
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 2</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 9.0"></ion-input>
+    </ion-item>
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 3</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 7.5"></ion-input>
+    </ion-item>
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 4</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 8.0"></ion-input>
+    </ion-item>
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 5</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 6.5"></ion-input>
+    </ion-item>
+    <ion-item class="nota-item">
+      <ion-label position="floating">Ingrese Nota 6</ion-label>
+      <ion-input type="number" placeholder="Ejemplo: 9.5"></ion-input>
+    </ion-item>
+  </div>
+
+  <!-- Botón para agregar notas -->
+  <ion-button expand="block" color="primary" class="ion-margin-top">Agregar Notas</ion-button>
+
   <app-footer></app-footer>
 </ion-content>

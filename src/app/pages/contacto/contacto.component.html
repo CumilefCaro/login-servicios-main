@@ -1,162 +1,24 @@
 <ion-content>
   <app-header></app-header>
   <p>Alumno Bienvenido a ClassEdu: {{nombre}}</p>
-  <p>Tus Asignaturas:</p>
-  <style>
-    .asignaturas-container {
-      padding: 20px;
-    }
-
-    .asignatura {
-      margin-bottom: 20px;
-    }
-
-    h3 {
-      color: #007bff; /* Cambia el color según tu preferencia */
-    }
-
-    .notas {
-      display: flex;
-      flex-wrap: wrap;
-    }
-
-    .nota {
-      background-color: #f0f0f0; /* Color de fondo para las notas */
-      border-radius: 5px;
-      padding: 10px;
-      margin: 5px;
-      font-size: 16px; /* Tamaño de letra */
-    }
-  </style>
+  <p>Tus Asignaturas :</p>
 
   <div class="asignaturas-container">
-    <div class="asignatura">
-      <h3>Programación</h3>
-      <div class="notas">
-        <span class="nota">7</span>
-        <span class="nota">8</span>
-        <span class="nota">9</span>
-        <span class="nota">10</span>
-        <span class="nota">6</span>
-        <span class="nota">5</span>
-        <span class="nota">8</span>
-        <span class="nota">9</span>
-        <span class="nota">10</span>
-        <span class="nota">7</span>
-      </div>
-    </div>
+    <ion-button expand="block" color="primary" [routerLink]="['/alumno']">
+      Programación
+    </ion-button>
 
-    <div class="asignatura">
-      <h3>Estructuras de Datos</h3>
-      <div class="notas">
-        <span class="nota">6</span>
-        <span class="nota">7</span>
-        <span class="nota">8</span>
-        <span class="nota">9</span>
-        <span class="nota">10</span>
-        <span class="nota">5</span>
-        <span class="nota">6</span>
-        <span class="nota">8</span>
-        <span class="nota">9</span>
-        <span class="nota">7</span>
-      </div>
-    </div>
+    <ion-button expand="block" color="secondary" disabled>
+      Estructuras de Datos
+    </ion-button>
 
-    <div class="asignatura">
-      <h3>Base de Datos</h3>
-      <div class="notas">
-        <span class="nota">10</span>
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">6</span>
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">10</span>
-        <span class="nota">7</span>
-        <span class="nota">6</span>
-      </div>
-    </div>
+    <ion-button expand="block" color="tertiary" disabled>
+      Bases de Datos
+    </ion-button>
 
-    <div class="asignatura">
-      <h3>Sistemas Operativos</h3>
-      <div class="notas">
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">9</span>
-        <span class="nota">6</span>
-        <span class="nota">10</span>
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">9</span>
-        <span class="nota">6</span>
-        <span class="nota">8</span>
-      </div>
-    </div>
-
-    <div class="asignatura">
-      <h3>Redes de Computadoras</h3>
-      <div class="notas">
-        <span class="nota">5</span>
-        <span class="nota">6</span>
-        <span class="nota">8</span>
-        <span class="nota">9</span>
-        <span class="nota">10</span>
-        <span class="nota">6</span>
-        <span class="nota">7</span>
-        <span class="nota">8</span>
-        <span class="nota">5</span>
-        <span class="nota">9</span>
-      </div>
-    </div>
-
-    <div class="asignatura">
-      <h3>Ingeniería de Software</h3>
-      <div class="notas">
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">10</span>
-        <span class="nota">7</span>
-        <span class="nota">6</span>
-        <span class="nota">9</span>
-        <span class="nota">10</span>
-        <span class="nota">8</span>
-        <span class="nota">6</span>
-        <span class="nota">7</span>
-      </div>
-    </div>
-
-    <div class="asignatura">
-      <h3>Arquitectura de Computadores</h3>
-      <div class="notas">
-        <span class="nota">7</span>
-        <span class="nota">8</span>
-        <span class="nota">6</span>
-        <span class="nota">10</span>
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">10</span>
-        <span class="nota">6</span>
-        <span class="nota">8</span>
-      </div>
-    </div>
-
-    <div class="asignatura">
-      <h3>Seguridad Informática</h3>
-      <div class="notas">
-        <span class="nota">10</span>
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">6</span>
-        <span class="nota">10</span>
-        <span class="nota">9</span>
-        <span class="nota">8</span>
-        <span class="nota">7</span>
-        <span class="nota">5</span>
-      </div>
-    </div>
+    <ion-button expand="block" color="success" disabled>
+      Redes de Computadoras
+    </ion-button>
   </div>
 
   <app-footer></app-footer>
